@@ -7,7 +7,7 @@ USER 10014
 FROM alpine
 WORKDIR /app
 COPY --from=builder /app/go-proxy-bingai .
-COPY config.json /app/configs/   
+
 
 USER 10014   
 

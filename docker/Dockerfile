@@ -8,5 +8,7 @@ FROM alpine
 WORKDIR /app
 COPY --from=builder /app/go-proxy-bingai .
 
+USER 10014   
+
 EXPOSE 3000
 CMD ["/app/go-proxy-bingai"]

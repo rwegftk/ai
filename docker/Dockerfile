@@ -7,7 +7,7 @@ USER 10014
 FROM alpine
 WORKDIR /app
 COPY --from=builder /app/go-proxy-bingai .
-COPY config.json /app/configs/   # 添加这一行来复制config.json文件
+COPY config.json /app/configs/   
 
 USER 10014   
 
